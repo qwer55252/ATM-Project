@@ -60,12 +60,6 @@ class Controller:
             pass
         else:
             print("카드 정보 혹은 핀 번호가 올바르지 않습니다. 다시 시도해주세요.")
-    
-    def account_select(self, account: str):
-        if account in self.accounts:
-            return True
-        else:
-            return False
 
     def account_action(self, card_num: str, entered_pin: str, account: str, action: tuple):
         # 이 메서드는 card_num, entered_pin, account 확인이 이루어진 후 불러집니다.
@@ -146,6 +140,8 @@ if __name__ == "__main__":
     bank1.update_account("1234-1234-1234-1234", "1234", "111111-11-111111", 2000)   # test case 4 : 카드에 새로운 계좌 생성
     bank1.print_bank()
     print('test case 4 Done\n')
+    bank1.add_entry("4321-4321-4321-4321", "4321", "444444-44-444444", 1000)
+    bank1.print_bank()
     print('------------- End Bank Class Test -------------')
 
     # Controller 클래스 테스트
