@@ -14,7 +14,7 @@ python3 controller.py
 
 Stores the information from the bank in the bank_data which is instance variable of bank class. Here is an example of bank_data.
 
-```json
+```jsonc
 "account": {
    '1234-1234-1234-1234': {
         'pin': '1234', 
